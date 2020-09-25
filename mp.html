@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>post ur adds</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1>post ur adds</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#services" data-after="Home">SignUp</a></li>
+            <li><a href="#snp" data-after="Service">Login</a></li>
+            <li><a href="#editprofile" data-after="editprofile">Editprofile</a></li>
+            <li><a href="#postad" data-after="postad">PostAd</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="hero">
+    <div class="hero container">
+      <div class="block" >
+        <h1>A Platform , <span></span></h1>
+        <h1>Where You can find space to <span></span></h1>
+        <h1>post ur adds <span></span></h1>
+        
+      </div>
+    </div>
+  </section>
+<!--sign up-->
+
+
+  <section id="services">
+    <div class="services container">
+      <div class="service-top"></div>
+        <form action="/SignUp.php" method="post">
+           <div class="signup">
+           <p>Are You:</p>
+           <input type="radio" id="spaceprovider" name="spaceprovider" value="spaceprovider">
+          <label for="spaceprovider">spaceprovider</label>
+         
+          <input type="radio" id="advertisor" name="advertisor" value="advertisor">
+          <label for="advertisor">advertisor</label>
+     
+          <input type="radio" id="both" name="both" value="both">
+          <label for="both">Both</label>
+          <br><br><br>
+
+          <label for="company name" >company name:</label>
+          <input type="text" id="company name" name="company name" value="">
+
+          <label for="address">address:</label>
+          <input type="text" id="address" name="address" value="">
+
+          <label for="contact name">contact name:</label>
+          <input type="text" name="contact name" value="">
+
+          <label for="email">email:</label>
+          <input type="text" name="email" value=""><br><br><br>
+
+          <div class="details">
+            <label for="user name">user name:</label>
+            <input type="text"  name="user name" value="">
+            <br><br>
+
+            <label for="password">password:</label>
+            <input type="password"  name="password" value=""><br><br> 
+    
+            <label for="retype password">Retype password:</label>
+            <input type="password"  name="retype password" value=""><br>
+
+            <button type="submit">Submit</button>
+            <button type="submit" id="fr">Cancel</button>
+          </div>
+          </div>
+        </form>
+     </div>
+</section>
+
+<!--edit profile-->
+<section id="editprofile">
+    <div class="services container">
+      <div class="service-top"></div>
+        <form action="/editprofile.php" method="post">
+          <div class="signup">
+           <p>Are You</p>
+          
+          <input type="radio" id="spaceprovider" name="type" value="spaceprovider">
+          <label for="spaceprovider">spaceprovider</label>
+         
+          <input type="radio" id="advertisor" name="type" value="advertisor">
+          <label for="advertisor">advertisor</label>
+     
+          <input type="radio" id="both" name="type" value="both">
+          <label for="both">Both</label>
+          <br><br><br>
+
+
+          <label for="company name" >company name:</label>
+          <input type="text" id="company name" name="company name" value="">
+
+          <label for="address" id ="em" >address:</label>
+          <input type="text" id="address" name="address" value="">
+
+          <label for="contact name" id ="em" >contact name:</label>
+          <input type="text" name="contact name" value="">
+
+          <label for="email" id ="em" >email:</label>
+          <input type="text" name="email" value=""><br><br><br>
+
+          <div class="details">
+            <label for="user name">user name:</label>
+            <input type="text"  name="user name" value="">
+            <br><br>
+             <div class="ep">
+            <label for="password">password:</label>
+            <input type="password"  name="password" value=""><br><br> 
+    
+            <label for="retype password">Retype password:</label>
+            <input type="password"  name="retype password" value=""><br>
+             </div>
+    
+            <button type="submit">Submit</button>
+            <button type="submit" id="fr">Cancel</button>
+          </div>
+        </div>
+      </form>
+     </div>
+</section>
+
+
+
+<!--signin-->
+<section id="snp">
+    <div class="snp container">
+      <div class="snp-top">
+       <div class="hamburger">
+         <div class="bar"></div>
+       </div>
+       <div class="login">
+       <form action="SignIn.php" method="get">
+       <label for="username" >Username:</label> 
+       <input type="text" name="Username" required><br><br>
+       <label for="password" >Password:</label> 
+       <input type="password" name="Password" required><br><br>
+       <button type="submit" >Login</button>
+       <button type="submit" >forgot password</button><br><br>
+       <label><input type="checkbox" checked="checked" name="remember">Remember me</label></div>
+       </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--end of signin-->
+
+<!--post advertisement-->
+<section id="postad">
+    <div class="snp container">
+      <div class="snp-top">
+       <div class="hamburger">
+         <div class="bar"></div>
+       </div>
+       <div class="postad">
+       <form action="Postad.php" method="get">
+       <div class="con">
+       <label for="Ad Name" >Ad Name</label> 
+       <input type="text" name="Ad Name" ><br>
+       <label for="Ad Content" >Ad Content</label> 
+       <input type="text" name="Ad Content" ><br>
+       <label for="Frequency of Play" >Frequency of Play</label> 
+       <input type="text" name="Frequency of Play" ><br>
+       <label for="Domain" >Domain</label> 
+       <input type="text" name="Domain"><br>
+       <label for="Start Date & Time:" >Start Date & Time:</label> 
+       <input type="text" name="Start Date & Time:"><br>
+       <label for="End Date & Time:" >End Date & Time:</label> 
+       <input type="text" name="End Date & Time:"><br>
+       <button type="submit" >Submit</button>
+       <button type="Cancel" >Cancel</button><br><br>
+       </form>
+       </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </body>
+  <footer>
+  <p  style="font-size:20px;"><b>Contact</b></p>
+  <p><a href="mailto:hegdesupriya1999@gmail.com">Hegdesupriya.com</a></p>
+  </footer>
+  </html>
